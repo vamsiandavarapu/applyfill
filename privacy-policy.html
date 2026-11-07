@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ApplyFill Privacy Policy</title>
+<style>
+  body { font: 16px/1.65 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 16px 80px; color: #111827; }
+  h1 { font-size: 28px; } h2 { font-size: 19px; margin-top: 32px; }
+  code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; }
+  .meta { color: #6b7280; }
+</style>
+</head>
+<body>
+<h1>ApplyFill Privacy Policy</h1>
+<p class="meta">Effective date: 7 November 2026</p>
+
+<p>ApplyFill ("the extension") is a browser extension for Microsoft Edge that fills in job application forms using information you save yourself. This policy explains what the extension stores, what it sends, and the controls you have. In short: <b>the developer has no server and receives none of your data.</b></p>
+
+<h2>1. What the extension stores (on your device only)</h2>
+<ul>
+  <li><b>Your profile</b>: the details you type into the extension's Settings page, such as name, email, phone, location, links, education, skills, work history and common answers.</li>
+  <li><b>Your settings</b>: whether AI is on, your chosen AI provider, model name, base URL and API key.</li>
+  <li><b>Temporary session data</b>: which tab is in use and a short activity log shown in the popup. This is cleared when you close the browser.</li>
+</ul>
+<p>This data is kept in the browser's extension storage (<code>chrome.storage.local</code> and <code>chrome.storage.session</code>) on your device. It is not synced to any account and is not sent to the developer. Removing the extension, or pressing <b>Delete all my data</b> in Settings, erases it.</p>
+
+<h2>2. What the extension reads from web pages</h2>
+<p>When you click the extension's button on a page, it reads the structure of that page's form (field labels, types and dropdown options) so it can fill the fields. It does this only on the page where you started it, or on sites you have allowed under "all sites" access. It does not read your passwords, does not track your browsing, and does not collect browsing history.</p>
+
+<h2>3. What is sent to a third party, and only if you choose</h2>
+<p>AI assistance is <b>off by default</b>. If you turn it on and tick the consent box, then for form fields that the built-in rules cannot fill, the extension sends the following directly from your browser to the AI provider <b>you</b> selected (for example Groq, OpenRouter, or a server you run such as Ollama):</p>
+<ul>
+  <li>the label, type and options of those fields, and the page title and website name;</li>
+  <li>the parts of your profile that help answer them: education, skills, bio, experience, projects, achievements, certifications, and your saved common answers.</li>
+</ul>
+<p><b>Your email address, phone number, street address and postal code are never sent to the AI provider.</b> Your API key is sent only to the provider you selected, to authenticate the request.</p>
+<p>The provider processes this information under its own terms and privacy policy, which you should read. The developer of ApplyFill is not a party to that exchange and does not see it. Because job forms are filled with your own information, the extension does not intentionally send other people's personal data; if a page shows someone else's personal data inside a form label, it could be included in the field text, so avoid using AI mode on such pages.</p>
+
+<h2>4. What we do not do</h2>
+<ul>
+  <li>We do not collect, store, sell, rent or share your data.</li>
+  <li>We do not use analytics, advertising, tracking pixels or any developer-operated server.</li>
+  <li>We do not load or run remote code.</li>
+  <li>We never submit applications, tick consent or terms boxes, or upload files for you.</li>
+</ul>
+
+<h2>5. Permissions and why they are needed</h2>
+<ul>
+  <li><b>storage</b>: save your profile and settings on your device.</li>
+  <li><b>activeTab and scripting</b>: run the form-filling script on the page where you click the extension button.</li>
+  <li><b>Access to api.groq.com</b>: send AI requests to Groq, only if you enable AI and choose Groq.</li>
+  <li><b>Optional access to all sites</b>: only if you turn it on in Settings, so the extension can keep working when an application moves between websites. You can remove it at any time.</li>
+  <li><b>Optional access to another AI provider's address</b>: requested only when you select that provider.</li>
+</ul>
+
+<h2>6. Your controls</h2>
+<ul>
+  <li>Turn AI on or off at any time in Settings. When off, nothing is sent anywhere.</li>
+  <li>Edit, export or delete your profile in Settings.</li>
+  <li>Press <b>Delete all my data</b> to clear everything the extension stores.</li>
+  <li>Remove "all sites" access in Settings or in the browser's extension permissions.</li>
+  <li>Revoke your API key with your AI provider at any time.</li>
+</ul>
+
+<h2>7. Security</h2>
+<p>Requests to AI providers use HTTPS (except when you point the extension at a server on your own machine). Your API key is stored in the browser's extension storage on your device; use a key that you can revoke and that has limited permissions. Anyone with access to your browser profile or device could access this storage.</p>
+
+<h2>8. Children</h2>
+<p>The extension is not directed at children under 13 and does not knowingly collect any data from them.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the new version will be posted at this address with an updated effective date, and material changes will be described in the extension's store listing.</p>
+
+<h2>10. Contact</h2>
+<p>Questions or requests: <b>[YOUR NAME]</b>, <b>[YOUR CONTACT EMAIL]</b>.</p>
+</body>
+</html>

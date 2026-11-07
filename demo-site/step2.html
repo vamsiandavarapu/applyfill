@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apply step 2: Junior AI Engineer | Example Company (demo)</title>
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+  header { background: #0f172a; color: #fff; padding: 16px 32px; font-weight: 700; }
+  main { max-width: 760px; margin: 28px auto; padding: 0 16px; }
+  form { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 26px; }
+  h1 { margin: 0 0 4px; font-size: 22px; } .step { color: #64748b; margin-bottom: 18px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .field { margin-bottom: 14px; }
+  label { display: block; font-weight: 600; margin-bottom: 4px; }
+  .check label { font-weight: 400; display: flex; gap: 8px; }
+  input[type=text], select, textarea { width: 100%; box-sizing: border-box; padding: 9px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+  textarea { min-height: 100px; }
+  .btn { display: inline-block; background: #16a34a; color: #fff; padding: 11px 22px; border-radius: 8px; font-weight: 600; border: 0; cursor: pointer; font-size: 15px; }
+</style>
+</head>
+<body>
+<header>Example Company Careers</header>
+<main>
+  <form id="f" onsubmit="document.getElementById('done').hidden=false; return false">
+    <h1>Apply for Junior AI Engineer</h1>
+    <div class="step">Step 2 of 2: Education and questions</div>
+    <div class="row">
+      <div class="field"><label for="dg">Degree</label><input id="dg" type="text" /></div>
+      <div class="field"><label for="br">Branch / field of study</label><input id="br" type="text" /></div>
+    </div>
+    <div class="field"><label for="un">College / University</label><input id="un" type="text" /></div>
+    <div class="row">
+      <div class="field"><label for="gy">Year of graduation</label><input id="gy" type="text" /></div>
+      <div class="field"><label for="cg">CGPA</label><input id="cg" type="text" /></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="s10">10th school name</label><input id="s10" type="text" /></div>
+      <div class="field"><label for="y10">10th passing year</label><input id="y10" type="text" /></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="s12">12th / Intermediate college</label><input id="s12" type="text" /></div>
+      <div class="field"><label for="p12">12th percentage</label><input id="p12" type="text" /></div>
+    </div>
+    <div class="field"><label for="wh">Why do you want to join Example Company? *</label><textarea id="wh"></textarea></div>
+    <div class="field"><label for="hd">How did you hear about us?</label>
+      <select id="hd"><option value="">Select...</option><option>Company career page</option><option>LinkedIn</option><option>Referral</option><option>Other</option></select></div>
+    <div class="field check"><label><input type="checkbox" id="terms" /> I agree to the terms and privacy policy</label></div>
+    <button class="btn" type="submit">Submit application</button>
+    <p id="done" hidden style="color:#166534;font-weight:600">Demo only: nothing was submitted.</p>
+  </form>
+</main>
+</body>
+</html>

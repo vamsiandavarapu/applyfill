@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apply: Junior AI Engineer | Example Company (demo)</title>
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+  header { background: #0f172a; color: #fff; padding: 16px 32px; font-weight: 700; }
+  main { max-width: 760px; margin: 28px auto; padding: 0 16px; }
+  form { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 26px; }
+  h1 { margin: 0 0 4px; font-size: 22px; } .step { color: #64748b; margin-bottom: 18px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .field { margin-bottom: 14px; }
+  label, legend { display: block; font-weight: 600; margin-bottom: 4px; }
+  fieldset { border: 0; padding: 0; margin: 0 0 14px; } fieldset label { display: inline-block; font-weight: 400; margin-right: 16px; }
+  input[type=text], input[type=email], input[type=tel], input[type=url], select, textarea {
+    width: 100%; box-sizing: border-box; padding: 9px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+  textarea { min-height: 90px; }
+  .btn { display: inline-block; background: #2563eb; color: #fff; padding: 11px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 0; cursor: pointer; font-size: 15px; }
+</style>
+</head>
+<body>
+<header>Example Company Careers</header>
+<main>
+  <form id="f" onsubmit="return false">
+    <h1>Apply for Junior AI Engineer</h1>
+    <div class="step">Step 1 of 2: About you</div>
+    <div class="row">
+      <div class="field"><label for="fn">First name *</label><input id="fn" name="first_name" type="text" required /></div>
+      <div class="field"><label for="ln">Last name *</label><input id="ln" name="last_name" type="text" required /></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="em">Email address *</label><input id="em" type="email" required /></div>
+      <div class="field"><label for="ph">Mobile number *</label><input id="ph" type="tel" required /></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="ci">Current city</label><input id="ci" type="text" /></div>
+      <div class="field"><label for="co">Current company</label><input id="co" type="text" /></div>
+    </div>
+    <div class="field"><label for="li">LinkedIn profile URL</label><input id="li" type="url" /></div>
+    <div class="field"><label for="gh">GitHub</label><input id="gh" type="url" /></div>
+    <fieldset>
+      <legend>Are you willing to relocate? *</legend>
+      <label><input type="radio" name="reloc" value="Yes" /> Yes</label>
+      <label><input type="radio" name="reloc" value="No" /> No</label>
+    </fieldset>
+    <div class="field">
+      <label for="sp">Will you now or in the future require visa sponsorship? *</label>
+      <select id="sp"><option value="">Select...</option><option>Yes</option><option>No</option></select>
+    </div>
+    <div class="field"><label for="cv">Resume / CV *</label><input id="cv" type="file" /></div>
+    <a class="btn" href="step2.html">Next</a>
+  </form>
+</main>
+</body>
+</html>
